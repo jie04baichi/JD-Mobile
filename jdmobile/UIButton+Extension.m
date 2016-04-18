@@ -24,11 +24,11 @@
     UIButton * button = [UIButton new];
     UIImage *Image = [[UIImage imageWithName:image] scaleImageWithSize:CGSizeMake(35, 35)];
     [button setImage:Image forState:UIControlStateNormal];
-    [button setImage:[UIImage imageWithName:nil] forState:UIControlStateHighlighted];
+    //[button setImage:[UIImage imageWithName:nil] forState:UIControlStateHighlighted];
     if (title) {
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [button setTitleColor:nil forState:UIControlStateHighlighted];
+        //[button setTitleColor:nil forState:UIControlStateHighlighted];
         button.titleLabel.font =[UIFont systemFontOfSize:14 ];
 
     }
@@ -92,7 +92,7 @@
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [button setTitleEdgeInsets:UIEdgeInsetsMake(0,16, 0, 0)];
     [button setImage:[UIImage imageWithName:image] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageWithName:nil] forState:UIControlStateHighlighted];
+    //[button setImage:[UIImage imageWithName:nil] forState:UIControlStateHighlighted];
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
